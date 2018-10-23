@@ -9,7 +9,7 @@
 
 <div>
  <img src="logoBeerHose.jpg">
-
+ <h1>BièresAGogo.com</h1>
   <ul>
     <li><a href="#0">Nouveautés</a></li>
     <li><a href="#1">Catégories</a></li>

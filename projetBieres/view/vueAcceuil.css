@@ -4,11 +4,26 @@ html{
     font: 1.1em sans-serif;
 }
 
+body {
+  margin : 0px;
+}
+
+div {
+  background: #1E7FCB;
+  padding: 20px 0px 30px 0px;
+}
+
+h1 {
+  margin : 10px 450px;
+  text-align: center;
+
+}
+
 ul{
     display: table;
     width: 700px;
-    margin: 30px 350px;
-    padding: 0;
+    margin: 10px auto;
+    padding: 0px;
     background: linear-gradient(deepskyblue, dodgerblue);
     border-radius: 3px;
 }
