@@ -31,6 +31,18 @@
 </div>
 
 <div id="body">
+
+  <div id="sidemenu">
+    <h4> Catégories </h4>
+    <ul>
+      <li><a>Nouveautés</a></li>
+      <li><a>Catégories</a></li>
+      <li><a>Mon panier</a></li>
+      <li><a>Se connecter</a></li>
+      <li><a>S'inscrire</a></li>
+    </ul>
+  </div>
+
   <div id="stand">
     <?php
     //foreach ($liste as $id => $url) {
@@ -38,11 +50,21 @@
       <img scr="'.$url.'" alt="'.$url.'" height="200" width="200">
       </a>';
     }*/
-    echo '<a href="play.ctrl.php?id=1&firstId=5">
-      <img scr="logoBeerHouse.jpg" height="30" width="30">
-      </a>';
-    //}
+    for ($i=0; $i < 15; $i++) {
+      echo '<div <div class="prod">';
+      echo '<p>';
+      echo '<a href="play.ctrl.php?id=1&firstId=5">
+        <img scr="logoBeerHouse.jpg" height="180" width="180">
+        </a>';
+      echo '</p>';
+      echo '<p align="center">';
+      echo 'Voici le prix';
+      echo '</p>';
+      echo '</div>';
+    }
+
     ?>
+
   </div>
 
 </div>

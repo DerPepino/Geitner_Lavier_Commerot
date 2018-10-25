@@ -64,3 +64,18 @@ div#barreHaut ul li a{
     text-decoration: none;
     padding: 8px 8px 17px 8px;
 }
+
+
+div#sidemenu {
+  
+}
+
+div#stand {
+  padding: 100px 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+div#stand .prod {
+  margin: 30px 50px;
+}
