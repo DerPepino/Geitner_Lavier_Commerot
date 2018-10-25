@@ -8,7 +8,7 @@
 <body>
 
 <div>
- <img src="logoBeerHose.jpg">
+ <img src="logoBeerHouse.jpg">
  <h1>BièresAGogo.com</h1>
   <ul>
     <li><a href="#0">Nouveautés</a></li>
