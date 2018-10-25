@@ -7,18 +7,6 @@
 </head>
 <body>
 
-<<<<<<< HEAD
-<div>
- <img src="logoBeerHouse.jpg">
- <h1>BièresAGogo.com</h1>
-  <ul>
-    <li><a href="#0">Nouveautés</a></li>
-    <li><a href="#1">Catégories</a></li>
-    <li><a href="#2">Mon panier</a></li>
-    <li><a href="#3">Se connecter</a></li>
-    <li><a href="#4">S'inscrire</a></li>
-  </ul>
-=======
 <div id="barreHaut">
   <div id="colonne1">
     <img src="logoBeerHouse.jpg" height="150" width="150">
@@ -56,8 +44,6 @@
     //}
     ?>
   </div>
-
->>>>>>> 43db84a703b7dbc308db8c0df0f7a7a214416ef3
 
 </div>
 
