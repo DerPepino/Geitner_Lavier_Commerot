@@ -30,7 +30,7 @@
   </div>
 </div>
 
-<div id="body">
+<section class="body">
 
   <div id="sidemenu">
     <h4> Catégories </h4>
@@ -67,7 +67,7 @@
 
   </div>
 
-</div>
+</section>
 
 </body>
 </html>

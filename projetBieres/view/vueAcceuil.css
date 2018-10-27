@@ -19,7 +19,7 @@ h1 {
   margin : 20px 100px 15px 100px;
   text-align: center;
   font-family: monospace;
-  font-family:OCR A Std, monospace
+  font-family:OCR A Std, monospace;
 
 }
 
@@ -66,16 +66,31 @@ div#barreHaut ul li a{
 }
 
 
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+
 div#sidemenu {
-  
+  width: 300px;
+ display: flex;
+}
+
+div#sidemenu ul {
+  width: 150px;
+  display: block;
+  background: linear-gradient(deepskyblue, dodgerblue);
 }
 
 div#stand {
-  padding: 100px 70px;
+  width: 600px;
+  padding: 30px 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 div#stand .prod {
-  margin: 30px 50px;
+  margin: 10px 10px;
 }
