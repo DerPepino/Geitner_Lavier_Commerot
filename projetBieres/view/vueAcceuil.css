@@ -33,21 +33,21 @@ div#barreHaut div#colonne2 {
   background: #1E7FCB;
 }
 div#barreHaut div#colonne3 {
-  width: 400px;
+  width: 10em;
   padding: 0px 0px 0px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 div#barreHaut div#colonne3 input{
-  width: 250px;
+  width: auto;
 }
 
 
 div#barreHaut ul{
     display: table;
-    width: 700px;
+    width: 600px;
     margin: 10px auto;
     padding: 0px;
     background: linear-gradient(deepskyblue, dodgerblue);
@@ -68,29 +68,28 @@ div#barreHaut ul li a{
 
 .body {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: space-between;
-}
-
-div#sidemenu {
-  width: 300px;
- display: flex;
-}
-
-div#sidemenu ul {
-  width: 150px;
-  display: block;
-  background: linear-gradient(deepskyblue, dodgerblue);
+  justify-content :flex-start;
 }
 
 div#stand {
-  width: 600px;
+  width: auto;
   padding: 30px 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-div#stand .prod {
-  margin: 10px 10px;
+
+div#sidemenu {
+  margin: 30px;
+  padding: 5px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+div#sidemenu ul {
+  width: auto;
 }

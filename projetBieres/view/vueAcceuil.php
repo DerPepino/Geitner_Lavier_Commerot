@@ -24,7 +24,7 @@
   <div id="colonne3">
     <form method="post" action="traitement.php">
       <p>
-        <label> </label> <input type="text" name="pseudo" placeholder="Rechercher"/>
+        <input type="text" name="pseudo" placeholder="Rechercher"/>
       </p>
     </form>
   </div>
