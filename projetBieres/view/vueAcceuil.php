@@ -17,8 +17,8 @@
        <li><a href="#0">Nouveautés</a></li>
        <li><a href="#1">Catégories</a></li>
        <li><a href="#2">Mon panier</a></li>
-       <li><a href="#3">Se connecter</a></li>
-       <li><a href="#4">S'inscrire</a></li>
+       <li><a href="vueConnexion.php">Se connecter</a></li>
+       <li><a href="vueInscription.php">S'inscrire</a></li>
      </ul>
   </div>
   <div id="colonne3">
@@ -54,7 +54,7 @@
       echo '<div <div class="prod">';
       echo '<p>';
       echo '<a href="play.ctrl.php?id=1&firstId=5">
-        <img scr="logoBeerHouse.jpg" height="180" width="180">
+        <img src="logoBeerHouse.jpg" height="180" width="180">
         </a>';
       echo '</p>';
       echo '<p align="center">';
