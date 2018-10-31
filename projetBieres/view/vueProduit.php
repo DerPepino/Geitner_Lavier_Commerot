@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <title>BièresAGogo.com</title>
-  <link rel="stylesheet" href="vueAcceuil.css"/>
+  <link rel="stylesheet" href="vueProduit.css"/>
 
 </head>
 <body>
@@ -43,23 +43,25 @@
       </ul>
     </div>
 
-    <div id="presentation">
+    <section class="leproduit">
       <div id="img">
-        <image src="ImageProduit.jpeg" height="200" width="200px">
+        <image src="ImageProduit.jpeg" height="250" width="250">
       </div>
-      <div id="description">
-        <p>Intitulé</p>
-        <p>complément d'info</p>
-        <p>reference</p>
+      <div id="presentation">
+        <div id="description">
+          <p>Intitulé</p>
+          <p>complément d'info</p>
+          <p>reference</p>
+        </div>
+        <div id="caracteristique">
+          <p>pleins de caracteristiques</p>
+        </div>
+        <div id="prix">
+          <p>voici le prix</p>
+          <input type="submit" name="ajouterPanier" value="Ajouter au panier" onclick="fonction();" >
+        </div>
       </div>
-      <div id="caracteristique">
-        <p>pleins de caracteristiques</p>
-      </div>
-      <div id="prix">
-        <p>voici le prix</p>
-        <input type="submit" name="ajouterPanier" value="Ajouter au panier" onclick="fonction();" >
-      </div>
-    </div>
+    </section>
 
   </section>
 </body>
