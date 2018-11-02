@@ -2,14 +2,14 @@
 <head>
   <meta charset="utf-8">
   <title>BièresAGogo.com</title>
-  <link rel="stylesheet" href="vueAcceuil.css"/>
+  <link rel="stylesheet" href="vueConnexion.css"/>
 
 </head>
 <body>
 
 <div id="barreHaut">
   <div id="colonne1">
-    <img src="images/logoBeerHouse.jpg" height="150" width="150">
+    <img src="logoBeerHouse.jpg" height="150" width="150">
   </div>
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
@@ -24,25 +24,13 @@
   <div id="colonne3">
     <form method="post" action="traitement.php">
       <p>
-        <input type="text" name="pseudo" placeholder="Rechercher"/>
+        <label> </label> <input type="text" name="pseudo" placeholder="Rechercher"/>
       </p>
     </form>
   </div>
 </div>
 
-<section class="body">
-
-  <div id="sidemenu">
-    <h4> Catégories </h4>
-    <ul>
-      <li><a>Nouveautés</a></li>
-      <li><a>Catégories</a></li>
-      <li><a>Mon panier</a></li>
-      <li><a>Se connecter</a></li>
-      <li><a>S'inscrire</a></li>
-    </ul>
-  </div>
-
+<div id="body">
   <div id="stand">
     <?php
     //foreach ($liste as $id => $url) {
@@ -50,24 +38,27 @@
       <img scr="'.$url.'" alt="'.$url.'" height="200" width="200">
       </a>';
     }*/
-    for ($i=0; $i < 15; $i++) {
-      echo '<div <div class="prod">';
-      echo '<p>';
-      echo '<a href="play.ctrl.php?id=1&firstId=5">
-        <img scr="images/logoBeerHouse.jpg" height="180" width="180">
-        </a>';
-      echo '</p>';
-      echo '<p align="center">';
-      echo 'Voici le prix';
-      echo '</p>';
-      echo '</div>';
-    }
-
+    echo '<a href="play.ctrl.php?id=1&firstId=5">
+      <img scr="logoBeerHouse.jpg" height="30" width="30">
+      </a>';
+    //}
     ?>
-
   </div>
 
-</section>
+</div>
+
+<form  method="post" action="traitement.php" id="conx">
+
+  <fieldset>
+    <legend>Connexion</legend>
+    <label for="mail">Adresse email :</label></br>
+    <input type="text" name="mail" id="mail" required/></br></br>
+    <label for="mdp">Mot de passe :</label></br>
+    <input type="text" name="mdp" id="mdp" required/></br></br>
+    <input type="submit" value="Envoyer" />
+  </fieldset>
+
+</form>
 
 </body>
 </html>

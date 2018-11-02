@@ -17,8 +17,8 @@
        <li><a href="#0">Nouveautés</a></li>
        <li><a href="#1">Catégories</a></li>
        <li><a href="#2">Mon panier</a></li>
-       <li><a href="#3">Se connecter</a></li>
-       <li><a href="#4">S'inscrire</a></li>
+       <li><a href="vueConnexion.php">Se connecter</a></li>
+       <li><a href="vueInscription.php">S'inscrire</a></li>
      </ul>
   </div>
   <div id="colonne3">
@@ -52,31 +52,32 @@
   <fieldset>
     <legend>Inscription</legend>
     <label for="nom">Nom :</label></br>
-    <input type="text" name="nom" id="nom"/></br></br>
+    <input type="text" name="nom" id="nom" required/></br></br>
     <label for="prenom">Prénom :</label></br>
-    <input type="text" name="prenom" id="prenom"/></br></br>
+    <input type="text" name="prenom" id="prenom" required/></br></br>
     <label for="date">Date de naissance :</label></br>
-    <input type="date" name="date" id="date"/></br></br>
+    <input type="date" name="date" id="date" required/></br></br>
     <label for="mail">Adresse email :</label></br>
-    <input type="text" name="mail" id="mail"/></br></br>
+    <input type="text" name="mail" id="mail" required/></br></br>
     <label for="mdp">Mot de passe :</label></br>
-    <input type="text" name="mdp" id="mdp"/></br></br>
+    <input type="text" name="mdp" id="mdp" required/></br></br>
     <label for="cmdp">Confirmer votre mot de passe :</label></br>
-    <input type="text" name="cmdp" id="cmdp"/>
+    <input type="text" name="cmdp" id="cmdp" required/>
   </fieldset>
 
   <fieldset>
-    <legend>Livraisons</legend>
-    <label for="adr1">Adresse 1 * :</label></br>
-    <input type="text" name="adr1" id="adr1"></br></br>
+    <legend>Adresse de livraison</legend>
+    <label for="adr1">Adresse 1 :</label></br>
+    <input type="text" name="adr1" id="adr1" required/></br></br>
     <label for="adr2">Adresse 2 :</label></br>
     <input type="text" name="adr2" id="adr2"></br></br>
-    <label for="postal">Code postal * :</label></br>
-    <input type="text" name="postal" id="postal"></br></br>
-    <label for="ville">Ville * :</label></br>
-    <input type="text" name="ville" id="ville"></br></br>
-    <label for="pays">pays * :</label></br>
-    <input type="text" name="pays" id="pays"></br></br>
+    <label for="postal">Code postal :</label></br>
+    <input type="text" name="postal" id="postal" required/></br></br>
+    <label for="ville">Ville :</label></br>
+    <input type="text" name="ville" id="ville" required/></br></br>
+    <label for="pays">pays :</label></br>
+    <input type="text" name="pays" id="pays" required/></br></br>
+    <input type="submit" value="Envoyer" />
   </fieldset>
 </form>
 
