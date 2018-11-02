@@ -9,7 +9,7 @@
 
 <div id="barreHaut">
   <div id="colonne1">
-    <img src="logoBeerHouse.jpg" height="150" width="150">
+    <img src="images/logoBeerHouse.jpg" height="150" width="150">
   </div>
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
@@ -45,7 +45,7 @@
 
     <section class="leproduit">
       <div id="img">
-        <image src="ImageProduit.jpeg" height="250" width="250">
+        <image src="images/ImageProduit.jpeg" height="250" width="250">
       </div>
       <div id="presentation">
         <div id="description">

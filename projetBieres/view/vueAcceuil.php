@@ -9,7 +9,7 @@
 
 <div id="barreHaut">
   <div id="colonne1">
-    <img src="logoBeerHouse.jpg" height="150" width="150">
+    <img src="images/logoBeerHouse.jpg" height="150" width="150">
   </div>
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
@@ -54,7 +54,7 @@
       echo '<div <div class="prod">';
       echo '<p>';
       echo '<a href="play.ctrl.php?id=1&firstId=5">
-        <img scr="logoBeerHouse.jpg" height="180" width="180">
+        <img scr="images/logoBeerHouse.jpg" height="180" width="180">
         </a>';
       echo '</p>';
       echo '<p align="center">';
