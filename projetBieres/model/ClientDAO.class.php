@@ -16,8 +16,20 @@ class ClientDAO
   function get(int $id) : Client {
     $req = "SELECT * FROM client WHERE id=$id";
     $sth = $this->db->query($req);
-    $result = $sth->fetchAll(PDO::FETCH_CLASS, "Client");
-    return $result[0];
+    if ($sth == false){
+      echo 'pas de valeurs trouvés dans la base de données';
+      exit();
+    }else {
+      $result = $sth->fetchAll();
+
+      $id = $result[0]['id'];
+      $nom = $result[0]['nom'];
+      $prenom = $result[0]['prenom'];
+      $email = $result[0]['email'];
+      $mdp = $result[0]['mdp'];
+      $client = new Client($id,$nom, $prenom,$email,$mdp);
+      return $client;
+    }
   }
 }
  ?>

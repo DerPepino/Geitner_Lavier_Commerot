@@ -1,3 +1,5 @@
+chmod o+rwx data
+
 sqlite3 produit.db
 .read produit.sql
 .separator |

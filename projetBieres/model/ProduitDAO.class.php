@@ -11,6 +11,7 @@ class ProduitDAO {
     $this->db = new PDO($database);
     }
     catch( PDOException $Exception ) {
+        echo ''.$path;
         echo 'erreure de connection : '.$Exception->getMessage();
     }
   }
