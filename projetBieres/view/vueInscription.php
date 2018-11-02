@@ -14,11 +14,11 @@
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
      <ul>
-       <li><a href="#0">Nouveautés</a></li>
-       <li><a href="#1">Catégories</a></li>
+       <li><a href="Acceuil.ctrl.php">Acceuil</a></li>
+       <!--<li><a href="#1">Catégories</a></li>-->
        <li><a href="#2">Mon panier</a></li>
-       <li><a href="vueConnexion.php">Se connecter</a></li>
-       <li><a href="vueInscription.php">S'inscrire</a></li>
+       <li><a href="Connexion.ctrl.php">Se connecter</a></li>
+       <li><a href="Inscription.ctrl.php">S'inscrire</a></li>
      </ul>
   </div>
   <div id="colonne3">
@@ -28,23 +28,6 @@
       </p>
     </form>
   </div>
-</div>
-
-<div id="body">
-  <div id="stand">
-    <?php
-    //foreach ($liste as $id => $url) {
-    /*echo '<a href="play.ctrl.php?id='.$id.'&firstId='.$ind.'">
-      <img scr="'.$url.'" alt="'.$url.'" height="200" width="200">
-      </a>';
-    }*/
-    echo '<a href="play.ctrl.php?id=1&firstId=5">
-      <img scr="images/logoBeerHouse.jpg" height="30" width="30">
-      </a>';
-    //}
-    ?>
-  </div>
-
 </div>
 
 <form  method="post" action="traitement.php" id="insc">

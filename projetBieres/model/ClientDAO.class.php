@@ -5,7 +5,7 @@ class ClientDAO
   private $db;
   function __construc($path)
   {
-    $database = 'sqlite:'.$path.'/client.db'
+    $database = 'sqlite:'.$path.'/dataDB.db'
     try {
       $this->db = new PDO($database);
     }

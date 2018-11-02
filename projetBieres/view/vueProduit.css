@@ -92,8 +92,9 @@ div#sidemenu ul {
   width: auto;
   padding: 30px 30px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .leproduit div#img {

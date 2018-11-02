@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <title>BièresAGogo.com</title>
-  <link rel="stylesheet" href="vueAcceuil.css"/>
+  <!--<link rel="stylesheet" href="vueAcceuil.css"/>-->
 
 </head>
 <body>
@@ -14,11 +14,11 @@
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
      <ul>
-       <li><a href="#0">Nouveautés</a></li>
-       <li><a href="#1">Catégories</a></li>
+       <li><a href="Acceuil.ctrl.php">Acceuil</a></li>
+       <!--<li><a href="#1">Catégories</a></li>-->
        <li><a href="#2">Mon panier</a></li>
-       <li><a href="vueConnexion.php">Se connecter</a></li>
-       <li><a href="vueInscription.php">S'inscrire</a></li>
+       <li><a href="Connexion.ctrl.php">Se connecter</a></li>
+       <li><a href="Inscription.ctrl.php">S'inscrire</a></li>
      </ul>
   </div>
   <div id="colonne3">
@@ -53,8 +53,11 @@
         <img scr="images/'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">
         </a>';
         echo '</p>';
-        echo '<p align="center">';
-        echo 'Voici le prix';
+        echo '<p>';
+        echo $biere->intitule;
+        echo '</p>';
+        echo '<p>';
+        echo $biere->prix;
         echo '</p>';
         echo '</div>';
     }
