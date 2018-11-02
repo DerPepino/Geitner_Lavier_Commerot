@@ -1,4 +1,5 @@
-<<?php
+<?php
+  require_once('Client.class.php');
 class ClientDAO
 {
   private $db;

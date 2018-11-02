@@ -45,12 +45,20 @@
 
   <div id="stand">
     <?php
-    //foreach ($liste as $id => $url) {
-    /*echo '<a href="play.ctrl.php?id='.$id.'&firstId='.$ind.'">
-      <img scr="'.$url.'" alt="'.$url.'" height="200" width="200">
-      </a>';
-    }*/
-    for ($i=0; $i < 15; $i++) {
+
+    foreach ($lesProduits as $val => $biere) {
+      echo '<div <div class="prod">';
+      echo '<p>';
+      echo '<a href="Produit.ctrl.php?id='.$biere->id.'&firstId='.$ind.'">
+        <img scr="images/'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">
+        </a>';
+        echo '</p>';
+        echo '<p align="center">';
+        echo 'Voici le prix';
+        echo '</p>';
+        echo '</div>';
+    }
+    /*for ($i=0; $i < 15; $i++) {
       echo '<div <div class="prod">';
       echo '<p>';
       echo '<a href="play.ctrl.php?id=1&firstId=5">
@@ -61,7 +69,7 @@
       echo 'Voici le prix';
       echo '</p>';
       echo '</div>';
-    }
+    }*/
 
     ?>
 

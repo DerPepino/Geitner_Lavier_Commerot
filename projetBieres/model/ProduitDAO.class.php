@@ -1,12 +1,12 @@
 <?php
-    require_once('Music.class.php');
-class MusicDAO {
+    require_once('Produit.class.php');
+class ProduitDAO {
   private $db;
 
 
   function __construct($path){
 
-    $database = 'sqlite:'.$path.'/music.db';
+    $database = 'sqlite:'.$path.'/produit.db';
     try {
     $this->db = new PDO($database);
     }
@@ -15,9 +15,8 @@ class MusicDAO {
     }
   }
 
-  function get(int $id):Music {
-    $sql =  'SELECT * FROM music WHERE id='.$id;
-    //echo $sql . '</br>';
+  function get(int $id):Produit {
+    $sql =  'SELECT * FROM produit WHERE id='.$id;
     $tab = $this->db->query($sql);
     if ($tab == false){
       echo 'pas de valeurs trouvés dans la base de données';
@@ -26,14 +25,13 @@ class MusicDAO {
       $result = $tab->fetchAll();
 
       $id = $result[0]['id'];
-      $author = $result[0]['author'];
-      $title = $result[0]['title'];
-      $cover = $result[0]['cover'];
-      $mp3 = $result[0]['mp3'];
-      $category = $result[0]['category'];
-      $music = new Music($id,$author, $title,$cover,$mp3,$category);
-      //var_dump($music);
-      return $music;
+      $intitule = $result[0]['intitule'];
+      $photographie = $result[0]['photographie'];
+      $description = $result[0]['description'];
+      $categorie = $result[0]['categorie'];
+      $prix = $result[0]['prix'];
+      $produit = new Produit($id,$intitule, $photographie,$description,$categorie,$prix);
+      return $produit;
     }
   }
 

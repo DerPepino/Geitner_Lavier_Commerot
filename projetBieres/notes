@@ -1,0 +1,8 @@
+sqlite3 produit.db
+.read produit.sql
+.separator |
+.import produitDB.txt produit
+
+SELECT photographie FROM produit;
+
+.quit

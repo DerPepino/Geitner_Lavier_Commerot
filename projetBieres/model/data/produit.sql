@@ -3,5 +3,6 @@ CREATE TABLE produit (
   intitule STRING,
   photographie STRING,
   description STRING,
+  categorie STRING,
   prix FLOAT
 );

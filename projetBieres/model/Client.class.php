@@ -1,4 +1,4 @@
-<<?php
+<?php
 class Client
 {
   public $id;
