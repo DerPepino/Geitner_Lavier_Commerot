@@ -17,7 +17,8 @@ CREATE TABLE produit (
 
 CREATE TABLE panier (
   idClient INTEGER,
-  idProduit INTEGER
+  idProduit INTEGER,
+  quantite INTEGER
 );
 
 CREATE TABLE categorie (

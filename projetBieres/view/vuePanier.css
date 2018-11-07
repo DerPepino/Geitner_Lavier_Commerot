@@ -1,0 +1,153 @@
+
+html{
+    background: #8A8A8A;
+    font: 1.1em sans-serif;
+}
+
+body {
+  margin : 0px;
+}
+
+div#barreHaut {
+  background: #1E7FCB;
+  padding: 20px 40px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin : 20px 100px 15px 100px;
+  text-align: center;
+  font-family: monospace;
+  font-family:OCR A Std, monospace;
+
+}
+
+div#barreHaut div#colonne1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#barreHaut div#colonne2 {
+  background: #1E7FCB;
+}
+div#barreHaut div#colonne3 {
+  width: 10em;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div#barreHaut div#colonne3 input{
+  width: auto;
+}
+
+
+div#barreHaut ul{
+    display: table;
+    width: 600px;
+    margin: 10px auto;
+    padding: 0px;
+    background: linear-gradient(deepskyblue, dodgerblue);
+    border-radius: 3px;
+}
+div#barreHaut ul li{
+    display: table-cell;
+}
+
+div#barreHaut ul li a{
+    display: block;
+    text-align: center;
+    color: rgba(0, 0, 0, .7);
+    text-decoration: none;
+    padding: 8px 8px 17px 8px;
+}
+
+
+.body {
+  display: flex;
+  justify-content :flex-start;
+}
+
+div#panier {
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+div#panier div#paiement {
+  width: 250px;
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color:  #34495e ;
+}
+
+div#panier div#paiement input{
+  margin: 30px 0px;
+  padding: 10px;
+  border: none;
+  width: auto;
+  height: 50px;
+  border-radius: 6px;
+  background: #34495E;
+  font : bold 16px Arial;
+  color: white;
+}
+
+div#bieres {
+  width: 700px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+div#bieres .prod {
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color:  #34495e ;
+}
+
+div#bieres .prod .infos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+div#bieres .prod p {
+  margin: 5px;
+}
+
+div#sidemenu {
+  margin: 30px;
+  padding: 5px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+div#sidemenu ul {
+  width: auto;
+}

@@ -15,8 +15,7 @@
     <h1>BièresAGogo.com</h1>
      <ul>
        <li><a href="Acceuil.ctrl.php">Acceuil</a></li>
-       <!--<li><a href="#1">Catégories</a></li>-->
-       <li><a href="#2">Mon panier</a></li>
+       <li><a href="Panier.ctrl.php">Mon panier</a></li>
        <li><a href="Connexion.ctrl.php">Se connecter</a></li>
        <li><a href="Inscription.ctrl.php">S'inscrire</a></li>
      </ul>
