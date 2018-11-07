@@ -1,0 +1,4 @@
+1|Blonde
+2|Brune
+3|Ambree
+4|Blanche

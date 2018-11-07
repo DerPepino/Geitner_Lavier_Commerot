@@ -1,7 +1,7 @@
 chmod o+rwx data
 
-sqlite3 produit.db
-.read produit.sql
+sqlite3 dataDB.db
+.read create.sql
 .separator |
 .import produitDB.txt produit
 

@@ -12,13 +12,8 @@
   require_once('../model/ProduitDAO.class.php');
   $rayon = new ProduitDAO($config['database_path']);
 
-  // Récupération de l'objet musique correspondant à l'id
+  // Récupération de l'objet biere correspondant à l'id
   $m = $rayon->get($id);
-
-  // Construction de l'URL de la musique
-  //$music = $config['data_url'].'/mp3/'.$m->mp3;
-  //$cover = $config['data_url'].'/img/'.$m->cover;
-
 
   include('../view/vueProduit.php');
 ?>

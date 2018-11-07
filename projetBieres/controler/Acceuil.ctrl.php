@@ -11,6 +11,13 @@ if ( isset($_GET["firstId"]) && $_GET["firstId"]>0 ){
   $ind = 1;
 }
 
+$indsuivant = $ind +15;
+if ($ind-15>0) {
+  $indprecedent = $ind-15;
+}else {
+  $indprecedent = 1;
+}
+
 
 $config = parse_ini_file('../config/config.ini');
 $rayon = new ProduitDAO($config['database_path']);

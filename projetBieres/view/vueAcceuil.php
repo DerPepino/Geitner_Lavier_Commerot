@@ -35,46 +35,43 @@
   <div id="sidemenu">
     <h4> Catégories </h4>
     <ul>
-      <li><a>Nouveautés</a></li>
-      <li><a>Catégories</a></li>
-      <li><a>Mon panier</a></li>
-      <li><a>Se connecter</a></li>
-      <li><a>S'inscrire</a></li>
+      <li><a>Blondes</a></li>
+      <li><a>Brunes</a></li>
+      <li><a>Ambrées</a></li>
+      <li><a>Blanches</a></li>
     </ul>
   </div>
 
   <div id="stand">
-    <?php
 
-    foreach ($lesProduits as $val => $biere) {
-      echo '<div <div class="prod">';
-      echo '<p>';
-      echo '<a href="Produit.ctrl.php?id='.$biere->id.'&firstId='.$ind.'">
-        <img scr="images/'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">
-        </a>';
-        echo '</p>';
+    <div id="bieres">
+      <?php
+      foreach ($lesProduits as $val => $biere) {
+        echo '<div <div class="prod">';
         echo '<p>';
-        echo $biere->intitule;
-        echo '</p>';
-        echo '<p>';
-        echo $biere->prix;
-        echo '</p>';
-        echo '</div>';
-    }
-    /*for ($i=0; $i < 15; $i++) {
-      echo '<div <div class="prod">';
-      echo '<p>';
-      echo '<a href="play.ctrl.php?id=1&firstId=5">
-        <img scr="images/logoBeerHouse.jpg" height="180" width="180">
-        </a>';
-      echo '</p>';
-      echo '<p align="center">';
-      echo 'Voici le prix';
-      echo '</p>';
-      echo '</div>';
-    }*/
+        echo '<a href="Produit.ctrl.php?id='.$biere->id.'&firstId='.$ind.'">
+          <img scr="images/'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">
+          </a>';
+          echo '</p>';
+          echo '<p>';
+          echo $biere->intitule;
+          echo '</p>';
+          echo '<p>';
+          echo $biere->prix;
+          echo '</p>';
+          echo '</div>';
+      }
+      ?>
+    </div>
 
-    ?>
+    <div id="boutons">
+      <a href="Acceuil.ctrl.php?firstId=<?php echo $indprecedent;?>">
+        <input type="submit" name="precedent" value="Précédent">
+      </a>
+      <a href="Acceuil.ctrl.php?firstId=<?php echo $indsuivant;?>">
+        <input type="submit" name="suivant" value="Suivant">
+      </a>
+    </div>
 
   </div>
 

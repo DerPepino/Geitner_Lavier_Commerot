@@ -72,6 +72,24 @@ div#barreHaut ul li a{
 }
 
 div#stand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div#stand div#boutons input{
+  margin: 30px 10px;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  background: #34495E;
+  font : bold 15px Arial;
+  color: white;
+}
+
+div#bieres {
   width: auto;
   padding: 30px 30px;
   display: flex;
@@ -79,7 +97,7 @@ div#stand {
   flex-wrap: wrap;
 }
 
-div#stand .prod {
+div#bieres .prod {
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -88,7 +106,7 @@ div#stand .prod {
   border-width: 1px;
   border-radius: 2px;
 }
-div#stand .prod p {
+div#bieres .prod p {
   margin: 0px 0px 10px 0px;
 }
 
