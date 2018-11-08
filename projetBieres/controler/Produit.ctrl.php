@@ -25,6 +25,6 @@
   // Récupération de l'objet biere correspondant à l'id
   $m = $rayon->get($id);
 
-  include('../view/vueProduit.php');
+  include('../view/vueProduit.php?numClient='.$numClient);
 ?>
 </html>

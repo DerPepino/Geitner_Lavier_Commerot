@@ -14,14 +14,14 @@
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
      <ul>
-       <li><a href="Acceuil.ctrl.php">Acceuil</a></li>
-       <li><a href="Panier.ctrl.php">Mon panier</a></li>
-       <li><a href="Connexion.ctrl.php">Se connecter</a></li>
-       <li><a href="Inscription.ctrl.php">S'inscrire</a></li>
+       <li><a href="Acceuil.ctrl.php?numClient=<?php echo $numClient; ?>">Acceuil</a></li>
+       <li><a href="Panier.ctrl.php?numClient=<?php echo $numClient; ?>">Mon panier</a></li>
+       <li><a href="Connexion.ctrl.php?numClient=<?php echo $numClient; ?>">Se connecter</a></li>
+       <li><a href="Inscription.ctrl.php?numClient=<?php echo $numClient; ?>">S'inscrire</a></li>
      </ul>
   </div>
   <div id="colonne3">
-    <form method="post" action="traitement.php">
+    <form method="post" action="traitement.php?numClient=<?php echo $numClient; ?>">
       <p>
         <input type="text" name="pseudo" placeholder="Rechercher"/>
       </p>
@@ -34,11 +34,10 @@
     <div id="sidemenu">
       <h4> Catégories </h4>
       <ul>
-        <li><a>Nouveautés</a></li>
-        <li><a>Catégories</a></li>
-        <li><a>Mon panier</a></li>
-        <li><a>Se connecter</a></li>
-        <li><a>S'inscrire</a></li>
+        <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Blondes</a></li>
+        <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Brunes</a></li>
+        <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Ambrées</a></li>
+        <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Blanches</a></li>
       </ul>
     </div>
 
@@ -59,9 +58,9 @@
         </div>
         <div id="prix">
           <?php
-            echo '<p>'.$m->prix.' € '.$m->id.'</p>';
+            echo '<p>'.$m->prix.' € </p>';
           ?>
-          <input type="submit" name="ajouterPanier" value="Ajouter au panier" onclick="<?php $rayon->ajouterProduit(2, $m->id);?>" >
+          <input type="button" name="ajouterPanier" value="Ajouter au panier" onclick="$rayon->ajouterProduit(2, <?php echo $m->id; ?>)" />
         </div>
       </div>
     </section>

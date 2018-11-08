@@ -1,9 +1,9 @@
 <?php
-  /*if ( isset($_GET["numClient"])){
+  if ( isset($_GET["numClient"])){
     $numClient = $_GET["numClient"];
   }else {
     $numClient = -1;
-  }*/
+  }
 
   //include('../view/vueConnexion.php');
   require_once("../model/Client.class.php");
@@ -29,9 +29,9 @@
     $erreur="Nom d'utilisateur inconnue";
   }
   if (isset($erreur)){
-    include('../view/vueConnexion.php');
+    include('../view/vueConnexion.php?numClient='.$numClient);
   } else {
     $connect=true;
-    include('../view/vueAcceuil.php');
+    include('../view/vueAcceuil.php?numClient='.$thisuser->pseudo);
   }
 ?>

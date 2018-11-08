@@ -14,10 +14,10 @@
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
      <ul>
-       <li><a href="Acceuil.ctrl.php">Acceuil</a></li>
-       <li><a href="Panier.ctrl.php">Mon panier</a></li>
-       <li><a href="Connexion.ctrl.php">Se connecter</a></li>
-       <li><a href="Inscription.ctrl.php">S'inscrire</a></li>
+       <li><a href="Acceuil.ctrl.php?numClient=<?php echo $numClient; ?>">Acceuil</a></li>
+       <li><a href="Panier.ctrl.php?numClient=<?php echo $numClient; ?>">Mon panier</a></li>
+       <li><a href="Connexion.ctrl.php?numClient=<?php echo $numClient; ?>">Se connecter</a></li>
+       <li><a href="Inscription.ctrl.php?numClient=<?php echo $numClient; ?>">S'inscrire</a></li>
      </ul>
   </div>
   <div id="colonne3">
@@ -34,10 +34,10 @@
   <div id="sidemenu">
     <h4> Catégories </h4>
     <ul>
-      <li><a  href="Categories.ctrl.php">Blondes</a></li>
-      <li><a  href="Categories.ctrl.php">Brunes</a></li>
-      <li><a  href="Categories.ctrl.php">Ambrées</a></li>
-      <li><a  href="Categories.ctrl.php">Blanches</a></li>
+      <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Blondes</a></li>
+      <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Brunes</a></li>
+      <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Ambrées</a></li>
+      <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Blanches</a></li>
     </ul>
   </div>
 
@@ -48,7 +48,7 @@
       foreach ($lesProduits as $val => $biere) {
         echo '<div <div class="prod">';
         echo '<p>';
-        echo '<a href="Produit.ctrl.php?id='.$biere->id.'&firstId='.$ind.'">
+        echo '<a href="Produit.ctrl.php?id='.$biere->id.'&firstId='.$ind.'numClient='.$numClient.'>
           <img scr="images/'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">
           </a>';
           echo '</p>';
@@ -64,10 +64,10 @@
     </div>
 
     <div id="boutons">
-      <a href="Acceuil.ctrl.php?firstId=<?php echo $indprecedent;?>">
+      <a href="Acceuil.ctrl.php?firstId=<?php echo $indprecedent;?> numClient= <?php echo $numClient; ?>">
         <input type="submit" name="precedent" value="Précédent">
       </a>
-      <a href="Acceuil.ctrl.php?firstId=<?php echo $indsuivant;?>">
+      <a href="Acceuil.ctrl.php?firstId=<?php echo $indsuivant;?> numClient= <?php echo $numClient; ?>">
         <input type="submit" name="suivant" value="Suivant">
       </a>
     </div>

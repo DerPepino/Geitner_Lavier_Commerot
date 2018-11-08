@@ -35,7 +35,7 @@ class PanierDAO {
   }
 
   function supprimerProduit(int $idClient, int $idProduit) {
-    $sql =  'DELETE FROM panier WHERE idClient='.$idClient.' AND idProduit =' . $idProduit;
+    $sql =  'DELETE FROM panier WHERE idClient='.$idClient.' AND idProduit ='. $idProduit;
     $tab = $this->db->query($sql);
   }
 

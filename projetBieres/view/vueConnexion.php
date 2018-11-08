@@ -14,10 +14,10 @@
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
      <ul>
-       <li><a href="Acceuil.ctrl.php">Acceuil</a></li>
-       <li><a href="Panier.ctrl.php">Mon panier</a></li>
-       <li><a href="Connexion.ctrl.php">Se connecter</a></li>
-       <li><a href="Inscription.ctrl.php">S'inscrire</a></li>
+       <li><a href="Acceuil.ctrl.php?numClient=<?php echo $numClient; ?>">Acceuil</a></li>
+       <li><a href="Panier.ctrl.php?numClient=<?php echo $numClient; ?>">Mon panier</a></li>
+       <li><a href="Connexion.ctrl.php?numClient=<?php echo $numClient; ?>">Se connecter</a></li>
+       <li><a href="Inscription.ctrl.php?numClient=<?php echo $numClient; ?>">S'inscrire</a></li>
      </ul>
   </div>
   <div id="colonne3">
@@ -29,7 +29,7 @@
   </div>
 </div>
 
-<form  method="post" action="../controler/Connexion.ctrl.php" id="conx">
+<form  method="post" action="../controler/Connexion.ctrl.php?numClient=<?php echo $numClient; ?>" id="conx">
 
   <fieldset>
     <legend>Connexion</legend>

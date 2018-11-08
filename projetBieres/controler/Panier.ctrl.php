@@ -24,9 +24,9 @@ if ($numClient != -1){
     $lesProduits[$i] = $rayon->get($elem->idProduit);
     $lesQuantités[$i] = $elem->quantite;
   }
-  include('../view/vuePanier.php');
+  include('../view/vuePanier.php?numClient='.$numClient);
 }else {
-  include('Connexion.ctrl.php');
+  include('Connexion.ctrl.php?numClient='.$numClient);
 }
  ?>
  </html>
