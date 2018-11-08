@@ -1,14 +1,14 @@
 <?php
 class Client
 {
-  public $id;
+  public $pseudo;
   public $nom;
   public $prenom;
   public $email;
   public $mdp;
 
-  function __construct ($id,$nom,$prenom,$email,$mdp){
-    $this->id = $id;
+  function __construct ($pseudo,$nom,$prenom,$email,$mdp){
+    $this->pseudo = $pseudo;
     $this->nom = $nom;
     $this->prenom = $prenom;
     $this->email = $email;

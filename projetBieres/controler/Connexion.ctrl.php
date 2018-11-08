@@ -1,7 +1,5 @@
-<html>
-  <link rel="stylesheet" href="../view/vueConnexion.css"/>
-
 <?php
+<<<<<<< HEAD
   if ( isset($_GET["numClient"])){
     $numClient = $_GET["numClient"];
   }else {
@@ -9,5 +7,34 @@
   }
 
   include('../view/vueConnexion.php');
+=======
+  require_once("../model/Client.class.php");
+  require_once("../model/ClientDAO.class.php");
+  global $erreur;
+  $connect=false;
+  $database = new ClientDAO();
+  $user = $_POST['pseudo'];
+  $allusers=$database->getUsers();
+  $know=false;
+  foreach ($allusers as $value) {
+    if ($user == $value['pseudo']){
+      $know=true;
+    }
+  }
+  if ($know) {
+    $thisuser=$database->getUtilisateur($user);
+    $mdp = $_POST['mdp'];
+    if ($thisuser->getPassword()!=$mdp){
+      $erreur="Mot de passe incorrect";
+    }
+  } else {
+    $erreur="Nom d'utilisateur inconnue";
+  }
+  if (isset($erreur)){
+    include('../view/vueConnexion.php');
+  } else {
+    $connect=true;
+    include('../view/vueAcceuil.php');
+  }
+>>>>>>> 24d0f4baa887ea9693984d1853933fd1f2cb3e58
 ?>
-</html>
