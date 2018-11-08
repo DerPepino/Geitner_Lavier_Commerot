@@ -38,7 +38,7 @@ class ClientDAO
     return $result[0];
   }
   function getPassword() : client {
-    $req = "SELECT $mdp FROM client WHERE pseudo=$pseudo";
+    $req = "SELECT mdp FROM client WHERE pseudo=$pseudo";
     $sth = $this->db->query($req);
     $result = $sth->fetchAll(PDO::FETCH_CLASS, "Client");
     return $result[0];

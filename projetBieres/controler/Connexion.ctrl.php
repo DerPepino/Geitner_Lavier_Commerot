@@ -3,7 +3,7 @@
   require_once("../model/ClientDAO.class.php");
   global $erreur;
   $connect=false;
-  $database = new DAO();
+  $database = new ClientDAO();
   $user = $_POST['pseudo'];
   $allusers=$database->getUsers();
   $know=false;
