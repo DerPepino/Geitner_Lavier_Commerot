@@ -2,6 +2,7 @@
   <link rel="stylesheet" href="../view/vueProduit.css"/>
 
 <?php
+  require_once('../model/PanierDAO.class.php');
   $id = $_GET["id"];
   if ( isset($_GET["firstId"])){
     $firstId = $_GET["firstId"];

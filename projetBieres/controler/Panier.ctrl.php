@@ -4,12 +4,14 @@
 <?php
 require_once('../model/ProduitDAO.class.php');
 require_once('../model/Produit.class.php');
+require_once('../model/PanierDAO.class.php');
+require_once('../model/ElemPanier.class.php');
 
 
 if ( isset($_GET["numClient"])){
   $numClient = $_GET["numClient"];
 }else {
-  $numClient = -1;
+  $numClient = 1;
 }
 
 $config = parse_ini_file('../config/config.ini');
