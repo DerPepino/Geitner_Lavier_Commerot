@@ -122,23 +122,49 @@ div#bieres .prod {
   padding: 15px;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
   border-color:  #34495e ;
 }
-
-div#bieres .prod .infos {
+div#bieres div#partie_droite {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: 90%;
+}
+div#bieres div#partie_droite div#details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+div#bieres .prod div#partie_droite div#details div#infos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
 }
-
 div#bieres .prod p {
   margin: 5px;
 }
+div#bieres .prod div#partie_droite div#details input[name="quantite"] {
+  width: 75px;
+  margin: 5px;
+}
+div#bieres .prod div#partie_droite div#boutons input {
+  width: 150px;
+  margin: 10px;
+  text-decoration: none;
+  
+}
+div#bieres .prod div#partie_droite div#boutons {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
 
 div#sidemenu h4 {
   margin: 15px 15px 25px 15px;
