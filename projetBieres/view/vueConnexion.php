@@ -23,18 +23,18 @@
   <div id="colonne3">
     <form method="post" action="traitement.php">
       <p>
-        <label> </label> <input type="text" name="pseudo" placeholder="Rechercher"/>
+        <label> </label> <input type="text" name="pseudonym" placeholder="Rechercher"/>
       </p>
     </form>
   </div>
 </div>
 
-<form  method="post" action="traitement.php" id="conx">
+<form  method="post" action="Connexion.ctrl.php" id="conx">
 
   <fieldset>
     <legend>Connexion</legend>
-    <label for="mail">Adresse email :</label></br>
-    <input type="text" name="mail" id="mail" required/></br></br>
+    <label for="pseudo">Pseudonyme :</label></br>
+    <input type="text" name="pseudo" id="pseudo" required/></br></br>
     <label for="mdp">Mot de passe :</label></br>
     <input type="text" name="mdp" id="mdp" required/></br></br>
     <input type="submit" value="Envoyer" />
