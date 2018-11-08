@@ -3,11 +3,11 @@
 class ClientDAO
 {
   private $db;
-  function __construc($path)
+  function __construc()
   {
-    $database = 'sqlite:'.$path.'/dataDB.db'
+    //$database = 'sqlite:'.$path.'data/client.db'
     try {
-      $this->db = new PDO($database);
+      $this->db = new PDO('sqlite:data/client.db');
     }
     catch (PDOException $e){
       die("erreur de connexion:".$e->getMessage());
@@ -44,7 +44,7 @@ class ClientDAO
     return $result[0];
   }
   function getUsers() : client {
-    $req = "SELECT * FROM client WHERE;
+    $req = "SELECT * FROM client WHERE";
     $sth = $this->db->query($req);
     $result = $sth->fetchAll(PDO::FETCH_CLASS, "Client");
     return $result[0];

@@ -1,5 +1,5 @@
 CREATE TABLE client (
-  id INTEGER PRIMARY KEY,
+  pseudo STRING,
   nom STRING,
   prenom STRING,
   email STRING,
