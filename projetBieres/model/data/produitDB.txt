@@ -1,9 +1,9 @@
-1|Desperados|1.jpg|Bière sucrée,5.0%|blonde|5.50
-2|Desperados|2.jpg|Bière sucrée,5.0%|brune|5.50
-3|Desperados|3.jpg|Bière sucrée,5.0%|ambree|5.50
-4|Desperados|4.jpg|Bière sucrée,5.0%|blanche|5.50
-5|Desperados|5.jpg|Bière sucrée,5.0%|blonde|5.50
-6|Desperados|6.jpg|Bière sucrée,5.0%|blonde|5.50
-7|Desperados|7.jpg|Bière sucrée,5.0%|blonde|5.50
-8|Desperados|8.jpg|Bière sucrée,5.0%|blonde|5.50
-9|Desperados|9.jpg|Bière sucrée,5.0%|blonde|5.50
+1|Desperados|1.jpg|Bière sucrée, 5.0%, 0.33L|blonde|5.50
+2|Desperados|2.jpg|Bière sucrée, 5.0%, 0.33L|brune|5.50
+3|Desperados|3.jpg|Bière sucrée, 5.0%, 0.33L|ambree|5.50
+4|Desperados|4.jpg|Bière sucrée, 5.0%, 0.33L|blanche|5.50
+5|Desperados|5.jpg|Bière sucrée, 5.0%, 0.33L|blonde|5.50
+6|Desperados|6.jpg|Bière sucrée, 5.0%, 0.33L|blonde|5.50
+7|Desperados|7.jpg|Bière sucrée, 5.0%, 0.33L|blonde|5.50
+8|Desperados|8.jpg|Bière sucrée, 5.0%, 0.33L|blonde|5.50
+9|Desperados|9.jpg|Bière sucrée, 5.0%, 0.33L|blonde|5.50

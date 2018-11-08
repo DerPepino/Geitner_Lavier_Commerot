@@ -34,10 +34,10 @@
   <div id="sidemenu">
     <h4> Catégories </h4>
     <ul>
-      <li><a>Blondes</a></li>
-      <li><a>Brunes</a></li>
-      <li><a>Ambrées</a></li>
-      <li><a>Blanches</a></li>
+      <li><a  href="Categories.ctrl.php">Blondes</a></li>
+      <li><a  href="Categories.ctrl.php">Brunes</a></li>
+      <li><a  href="Categories.ctrl.php">Ambrées</a></li>
+      <li><a  href="Categories.ctrl.php">Blanches</a></li>
     </ul>
   </div>
 

@@ -19,11 +19,12 @@ h1 {
   margin : 20px 100px 15px 100px;
   text-align: center;
   font-family: monospace;
-  font-family:OCR A Std, monospace
+  font-family:OCR A Std, monospace;
 
 }
 
 div#barreHaut div#colonne1 {
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,23 +32,25 @@ div#barreHaut div#colonne1 {
 
 div#barreHaut div#colonne2 {
   background: #1E7FCB;
+  width: 60%;
 }
 div#barreHaut div#colonne3 {
-  width: 400px;
+  width: 20%;
   padding: 0px 0px 0px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 div#barreHaut div#colonne3 input{
-  width: 250px;
+  width: auto;
 }
 
 
 div#barreHaut ul{
     display: table;
-    width: 700px;
+    width: 600px;
     margin: 10px auto;
     padding: 0px;
     background: linear-gradient(deepskyblue, dodgerblue);
@@ -66,6 +69,7 @@ div#barreHaut ul li a{
 }
 
 form#insc {
+  margin: 40px;
   display: flex;
   justify-content: center;
 }
