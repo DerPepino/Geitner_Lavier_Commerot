@@ -11,12 +11,17 @@ if ( isset($_GET["firstId"]) && $_GET["firstId"]>0 ){
 }else {
   $ind = 1;
 }
-
 $indsuivant = $ind +15;
 if ($ind-15>0) {
   $indprecedent = $ind-15;
 }else {
   $indprecedent = 1;
+}
+
+if ( isset($_GET["numClient"])){
+  $numClient = $_GET["numClient"];
+}else {
+  $numClient = -1;
 }
 
 

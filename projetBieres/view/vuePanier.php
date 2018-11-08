@@ -49,13 +49,25 @@
       foreach ($lesProduits as $val => $biere) {
           echo '<section class="prod">';
           echo '<img scr="images/'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">';
-          echo '<div class="infos">';
+          echo '<div id="partie_droite">';
+          echo '<div id="details">';
+          echo '<div id="infos">';
           echo '<p> '.$biere->intitule .'</p>';
           echo '<p> '.$biere->description .'</p>';
-          echo '<p> '.$biere->prix .'</p>';
+          echo '<p> '.$biere->prix .' € </p>';
           echo '</div>';
-          echo '<p> Quantité </p>';
-          echo '<p>' .$biere->prix .'</p>';
+          echo '<input type="number" name="quantite" value="1" min="1">';
+          echo '<p>' .$biere->prix .' € </p>';
+          echo '</div>';
+          echo '<div id="boutons">';
+          echo '<a href="Produit.ctrl.php?id='. $biere->id .'">
+            <input type="submit" name="voirProduit" value="Voir le produit">
+          </a>';
+          echo '<a href="Acceuil.ctrl.php">
+            <input type="submit" name="supprimer" value="Supprimer">
+          </a>';
+          echo '</div>';
+          echo '</div>';
           echo '</section>';
       }
       ?>
