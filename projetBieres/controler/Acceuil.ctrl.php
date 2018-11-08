@@ -5,6 +5,7 @@
 require_once('../model/ProduitDAO.class.php');
 require_once('../model/Produit.class.php');
 
+global $connect;
 if ( isset($_GET["firstId"]) && $_GET["firstId"]>0 ){
   $ind = $_GET["firstId"];
 }else {
