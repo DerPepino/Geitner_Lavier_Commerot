@@ -59,9 +59,9 @@
         </div>
         <div id="prix">
           <?php
-            echo '<p>'.$m->prix.' €</p>';
+            echo '<p>'.$m->prix.' € '.$m->id.'</p>';
           ?>
-          <input type="submit" name="ajouterPanier" value="Ajouter au panier" onclick="fonction();" >
+          <input type="submit" name="ajouterPanier" value="Ajouter au panier" onclick="<?php $rayon->ajouterProduit(2, $m->id);?>" >
         </div>
       </div>
     </section>
