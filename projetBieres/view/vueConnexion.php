@@ -29,7 +29,7 @@
   </div>
 </div>
 
-<form  method="post" action="../controler/Connexion.ctrl.php?numClient=<?php echo $numClient; ?>" id="conx">
+<form  method="post" action="../controler/Connexion.ctrl.php?numClient=<?php echo $numClient; ?>. &id="conx">
 
   <fieldset>
     <legend>Connexion</legend>

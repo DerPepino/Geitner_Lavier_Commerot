@@ -29,9 +29,9 @@
     $erreur="Nom d'utilisateur inconnue";
   }
   if (isset($erreur)){
-    include('../view/vueConnexion.php?numClient='.$numClient);
+    include('../view/vueConnexion.php');
   } else {
     $connect=true;
-    include('../view/vueAcceuil.php?numClient='.$thisuser->pseudo);
+    include('Acceuil.ctrl.php');
   }
 ?>

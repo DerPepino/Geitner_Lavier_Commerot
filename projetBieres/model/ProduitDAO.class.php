@@ -37,7 +37,6 @@ class ProduitDAO {
   }
 
   function ajouterProduit(int $idClient, int $idProduit) {
-    echo 'AJOUUUUUTTTTTT';
     $sql =  'INSERT INTO panier VALUES ('.$idClient.', '.$idClient.', 1)';
     $this->db->exec($sql);
   }

@@ -49,7 +49,7 @@
         echo '<div <div class="prod">';
         echo '<p>';
         echo '<a href="Produit.ctrl.php?id='.$biere->id.'&firstId='.$ind.'numClient='.$numClient.'>
-          <img scr="images/'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">
+          <img scr="'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">
           </a>';
           echo '</p>';
           echo '<p>';
@@ -64,10 +64,10 @@
     </div>
 
     <div id="boutons">
-      <a href="Acceuil.ctrl.php?firstId=<?php echo $indprecedent;?> numClient= <?php echo $numClient; ?>">
+      <a href="Acceuil.ctrl.php?firstId=<?php echo $indprecedent;?> &numClient= <?php echo $numClient; ?>">
         <input type="submit" name="precedent" value="Précédent">
       </a>
-      <a href="Acceuil.ctrl.php?firstId=<?php echo $indsuivant;?> numClient= <?php echo $numClient; ?>">
+      <a href="Acceuil.ctrl.php?firstId=<?php echo $indsuivant;?> &numClient= <?php echo $numClient; ?>">
         <input type="submit" name="suivant" value="Suivant">
       </a>
     </div>
