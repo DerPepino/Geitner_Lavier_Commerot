@@ -9,7 +9,7 @@
 
 <div id="barreHaut">
   <div id="colonne1">
-    <img src="images/logoBeerHouse.jpg" height="150" width="150">
+    <img src="../view/images/logoBeerHouse.jpg" height="150" width="150">
   </div>
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
