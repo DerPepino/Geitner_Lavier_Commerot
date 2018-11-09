@@ -49,7 +49,7 @@
         echo '<div <div class="prod">';
         echo '<p>';
         echo '<a href="Produit.ctrl.php?id='.$biere->id.'&firstId='.$ind.'numClient='.$numClient.'>
-          <img scr="../view/images/'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">
+          <img scr="../view/images/'.$biere->photographie.'" alt= ../view/images/logoBeerHouse.jpg height="180" width="180">
           </a>';
           echo '</p>';
           echo '<p>';
