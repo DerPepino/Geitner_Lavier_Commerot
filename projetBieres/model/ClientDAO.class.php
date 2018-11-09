@@ -31,23 +31,23 @@ class ClientDAO
       return $client;
     }
   }*/
-  function getUtilisateur(string $pseudo) : client {
+  function getUtilisateur($pseudo) : Client {
     $req = "SELECT * FROM client WHERE pseudo=$pseudo";
     $sth = $this->db->query($req);
     $result = $sth->fetchAll(PDO::FETCH_CLASS, "Client");
     return $result[0];
   }
-  function getPassword() : client {
+  function getPassword($pseudo) : STRING {
     $req = "SELECT mdp FROM client WHERE pseudo=$pseudo";
     $sth = $this->db->query($req);
-    $result = $sth->fetchAll(PDO::FETCH_CLASS, "Client");
-    return $result[0];
+    $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
   }
-  function getUsers() : client {
-    $req = "SELECT * FROM client WHERE";
+  function getUsers() : Client {
+    $req = "SELECT * FROM client";
     $sth = $this->db->query($req);
-    $result = $sth->fetchAll(PDO::FETCH_CLASS, "Client");
-    return $result[0];
+    $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
   }
 }
  ?>
