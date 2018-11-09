@@ -16,7 +16,7 @@ class PanierDAO {
     }
   }
 
-  function MonPanier(int $id):Produit {
+  function MonPanier(int $id):array {
     $sql =  'SELECT * FROM panier WHERE idClient='.$id;
     $tab = $this->db->query($sql);
     if ($tab == false){
@@ -25,14 +25,18 @@ class PanierDAO {
     }else {
       $result = $tab->fetchAll();
 
-      $MonPanier[];
       foreach ($result as $i => $elem) {
         $idProduit = $elem['idProduit'];
         $quantite = $elem['quantite'];
-        $MonPanier[i]; = new ElemPanier($idProduit,$quantite);
+        $MonPanier[$i] = new ElemPanier($idProduit,$quantite);
       }
-      return $MonPanier[];
+      return $MonPanier;
     }
+  }
+
+  function supprimerProduit(int $idClient, int $idProduit) {
+    $sql =  'DELETE FROM panier WHERE idClient='.$idClient.' AND idProduit ='. $idProduit;
+    $tab = $this->db->query($sql);
   }
 
 }

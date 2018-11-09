@@ -15,14 +15,14 @@
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
      <ul>
-       <li><a href="Acceuil.ctrl.php">Acceuil</a></li>
-       <li><a href="Panier.ctrl.php">Mon panier</a></li>
-       <li><a href="Connexion.ctrl.php">Se connecter</a></li>
-       <li><a href="Inscription.ctrl.php">S'inscrire</a></li>
+       <li><a href="Acceuil.ctrl.php?numClient=<?php echo $numClient; ?>">Acceuil</a></li>
+       <li><a href="Panier.ctrl.php?numClient=<?php echo $numClient; ?>">Mon panier</a></li>
+       <li><a href="Connexion.ctrl.php?numClient=<?php echo $numClient; ?>">Se connecter</a></li>
+       <li><a href="Inscription.ctrl.php?numClient=<?php echo $numClient; ?>">S'inscrire</a></li>
      </ul>
   </div>
   <div id="colonne3">
-    <form method="post" action="traitement.php">
+    <form method="post" action="traitement.php?numClient=<?php echo $numClient; ?>">
       <p>
         <input type="text" name="pseudo" placeholder="Rechercher"/>
       </p>
@@ -49,9 +49,7 @@
       foreach ($lesProduits as $val => $biere) {
           echo '<section class="prod">';
           echo '<img scr="images/'.$biere->photographie.'" alt="'.$biere->photographie.'" height="180" width="180">';
-          echo '<div id="partie_droite">';
-          echo '<div id="details">';
-          echo '<div id="infos">';
+          echo '<div id="partie_droite"> <div id="details"> <div id="infos">';
           echo '<p> '.$biere->intitule .'</p>';
           echo '<p> '.$biere->description .'</p>';
           echo '<p> '.$biere->prix .' € </p>';
@@ -60,12 +58,10 @@
           echo '<p>' .$biere->prix .' € </p>';
           echo '</div>';
           echo '<div id="boutons">';
-          echo '<a href="Produit.ctrl.php?id='. $biere->id .'">
+          echo '<a href="Produit.ctrl.php?id='. $biere->id .' numClient='.$numClient.'">
             <input type="submit" name="voirProduit" value="Voir le produit">
           </a>';
-          echo '<a href="Acceuil.ctrl.php">
-            <input type="submit" name="supprimer" value="Supprimer">
-          </a>';
+          echo '<input type="submit" name="supprimer" value="Supprimer" onclick=supprimerProduit(2,'.$biere->id.')>';
           echo '</div>';
           echo '</div>';
           echo '</section>';
@@ -75,7 +71,7 @@
 
     <div id="paiement">
       <p> Prix Total : 9999€ </p>
-      <a href="Acceuil.ctrl.php">
+      <a href="Acceuil.ctrl.php?numClient=<?php echo $numClient; ?>">
         <input type="submit" name="commander" value="Passer ma commande">
       </a>
     </div>

@@ -20,10 +20,11 @@
   // Creation de l'instace DAO
   require_once('../model/ProduitDAO.class.php');
   $rayon = new ProduitDAO($config['database_path']);
+  //$panier = new PanierDAO($config['database_path']);
 
   // Récupération de l'objet biere correspondant à l'id
   $m = $rayon->get($id);
 
-  include('../view/vueProduit.php');
+  include('../view/vueProduit.php?numClient='.$numClient);
 ?>
 </html>

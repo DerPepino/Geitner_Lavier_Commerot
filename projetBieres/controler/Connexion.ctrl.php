@@ -1,9 +1,19 @@
 <?php
+<<<<<<< HEAD
   /*if ( isset($_GET["numClient"])){
     $numClient = $_GET["numClient"];
   }else {
     $numClient = -1;
   }*/
+=======
+  if ( isset($_GET["numClient"])){
+    $numClient = $_GET["numClient"];
+  }else {
+    $numClient = -1;
+  }
+
+  //include('../view/vueConnexion.php');
+>>>>>>> 2960e24a4a5c8402d1878b23c5a27a105f472381
   require_once("../model/Client.class.php");
   require_once("../model/ClientDAO.class.php");
   global $erreur;
@@ -27,9 +37,9 @@
     $erreur="Nom d'utilisateur inconnue";
   }
   if (isset($erreur)){
-    include('../view/vueConnexion.php');
+    include('../view/vueConnexion.php?numClient='.$numClient);
   } else {
     $connect=true;
-    include('../view/vueAcceuil.php');
+    include('../view/vueAcceuil.php?numClient='.$thisuser->pseudo);
   }
 ?>
