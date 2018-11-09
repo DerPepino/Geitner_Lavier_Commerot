@@ -1,14 +1,9 @@
 <?php
-<<<<<<< HEAD
-=======
   /*if ( isset($_GET["numClient"])){
     $numClient = $_GET["numClient"];
   }else {
     $numClient = -1;
   }*/
-
-  //include('../view/vueConnexion.php');
->>>>>>> bf10097fa8268bb11996c96df67fa2510bf32187
   require_once("../model/Client.class.php");
   require_once("../model/ClientDAO.class.php");
   global $erreur;
