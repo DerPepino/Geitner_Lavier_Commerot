@@ -41,5 +41,11 @@ class ProduitDAO {
     $sql =  'INSERT INTO panier VALUES ('.$idClient.', '.$idClient.', 1)';
     $this->db->exec($sql);
   }
+
+  function getAllCat() : array {
+    $req = "SELECT * FROM client";
+    $sth = $this->db->query($req);
+    $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
 }
  ?>

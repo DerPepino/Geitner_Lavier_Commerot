@@ -9,7 +9,7 @@
 
 <div id="barreHaut">
   <div id="colonne1">
-    <img src="logoBeerHouse.jpg" height="150" width="150">
+    <img src="images/logoBeerHouse.jpg" height="150" width="150">
   </div>
   <div id="colonne2">
     <h1>BièresAGogo.com</h1>
@@ -29,14 +29,14 @@
   </div>
 </div>
 
-<form  method="post" action="../controler/Connexion.ctrl.php?numClient=<?php echo $numClient; ?>" id="conx">
+<form  method="post" action="../controler/Connexion.ctrl.php" id="conx">
 
   <fieldset>
     <legend>Connexion</legend>
-    <label for="pseudo">Pseudonyme :</label></br>
+    <label for="pseudo">Pseudo :</label></br>
     <input type="text" name="pseudo" id="pseudo" required/></br></br>
     <label for="mdp">Mot de passe :</label></br>
-    <input type="text" name="mdp" id="mdp" required/></br></br>
+    <input type="password" name="mdp" id="mdp" required/></br></br>
     <input type="submit" value="Envoyer" />
   </fieldset>
 

@@ -1,5 +1,5 @@
 CREATE TABLE client (
-  pseudo STRING,
+  pseudo STRING PRIMARY KEY,
   nom STRING,
   prenom STRING,
   email STRING,
@@ -11,8 +11,9 @@ CREATE TABLE produit (
   intitule STRING,
   photographie STRING,
   description STRING,
-  categorie STRING,
-  prix FLOAT
+  categorie INTEGER,
+  prix FLOAT,
+  FOREIGN KEY(categorie) REFERENCES categorie(id)
 );
 
 CREATE TABLE panier (
@@ -23,5 +24,7 @@ CREATE TABLE panier (
 
 CREATE TABLE categorie (
   id INTEGER PRIMARY KEY,
-  nom TEXT
-)
+  nom TEXT,
+  pere INTEGER,
+  FOREIGN KEY(pere) REFERENCES categorie(id)
+);

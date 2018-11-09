@@ -1,12 +1,14 @@
 <?php
-class Produit
+class Categorie
 {
   public $id;
-  public $nom;
+  public $nom
+  public $pere;
 
-  function __construct ($id,$nom){
+  /*function __construct ($id,$nom,$pere){
     $this->id = $id;
     $this->nom = $nom;
-  }
+    $this->pere = $pere;
+  }*/
 }
  ?>

@@ -1,4 +1,9 @@
-1|Blonde
-2|Brune
-3|Ambree
-4|Blanche
+1|Tonneau|1
+2|Bouteille|2
+3|Cannette|3
+4|Brune|1
+5|Brune|2
+6|Brune|3
+7|Blanche|1
+8|Blanche|2
+9|Blanche|3
