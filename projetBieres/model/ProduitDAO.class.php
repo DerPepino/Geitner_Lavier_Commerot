@@ -6,7 +6,7 @@ class ProduitDAO {
 
   function __construct($path){
 
-    $database = 'sqlite:'.$path.'/dataDB.db';
+    $database = 'sqlite:'.$path.'/dataDBB.db';
     try {
     $this->db = new PDO($database);
     }

@@ -3,12 +3,12 @@
 class ClientDAO
 {
   private $db;
-  private $database = 'sqlite:../model/data/dataDB.db';
+  private $database = 'sqlite:../model/data/dataDBB.db';
   function __construc()
   {
 
     try {
-      $this->$database = "sqlite:../model/data/dataDB.db";
+      $this->$database = "sqlite:../model/data/dataDBB.db";
       $this->db = new PDO($this->database);
 
     }catch (PDOException $e){
