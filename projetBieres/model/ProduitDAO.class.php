@@ -41,10 +41,11 @@ class ProduitDAO {
     $this->db->exec($sql);
   }
 
-  function getAllCat() : array {
+  /*function getAllCat() : array {
     $req = "SELECT * FROM client";
     $sth = $this->db->query($req);
     $result = $sth->fetchAll(PDO::FETCH_ASSOC);
     return $result;
+}*/
 }
  ?>
