@@ -2,7 +2,6 @@
 <head>
   <meta charset="utf-8">
   <title>BièresAGogo.com</title>
-  <link rel="stylesheet" href="vueConnexion.css"/>
 
 </head>
 <body>
@@ -29,15 +28,11 @@
   </div>
 </div>
 
-<<<<<<< HEAD
-<form  method="post" action="../controler/Connexion.ctrl.php" id="conx">
-=======
-<form  method="post" action="../controler/Connexion.ctrl.php?numClient=<?php echo $numClient; ?>. &id="conx">
->>>>>>> 0f01da0b352b79730beae9f6470368c8629ae664
+<form  method="post" action="../controler/Connexion.ctrl.php?numClient=<?php echo $numClient; ?>&id='conx'">
 
   <fieldset>
     <legend>Connexion</legend>
-    <label for="pseudo">Pseudo :</label></br>
+    <label for="id">Identifiant :</label></br>
     <input type="text" name="pseudo" id="pseudo" required/></br></br>
     <label for="mdp">Mot de passe :</label></br>
     <input type="password" name="mdp" id="mdp" required/></br></br>

@@ -10,9 +10,9 @@ require_once('../model/ElemPanier.class.php');
 
 if ( isset($_GET["numClient"])){
   $numClient = $_GET["numClient"];
-  $numClient = 1;
+  $numClient = 2;
 }else {
-  $numClient = 1;
+  $numClient = 2;
 }
 
 $config = parse_ini_file('../config/config.ini');

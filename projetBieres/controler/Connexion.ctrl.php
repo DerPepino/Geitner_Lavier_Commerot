@@ -1,18 +1,26 @@
+<html>
+<link rel="stylesheet" href="../view/vueConnexion.css"/>
+
+
 <?php
-  /*if ( isset($_GET["numClient"])){
+
+  if ( isset($_GET["numClient"])){
     $numClient = $_GET["numClient"];
   }else {
     $numClient = -1;
-  }*/
+  }
 
   //include('../view/vueConnexion.php');
   require_once("../model/Client.class.php");
   require_once("../model/ClientDAO.class.php");
-  global $erreur;
+  /*global $erreur;
   $connect=false;
-  $database = new ClientDAO();
-  $user = $_POST['pseudo'];
-  $allusers=$database->getUsers();
+  $database = new ClientDAO();*/
+  if ( isset($_POST['id']) ){
+    $numClient = $_POST['id'];
+  }
+
+  /*$allusers=$database->getUsers();
   $know=false;
   foreach ($allusers as $value) {
     if ($user == $value['pseudo']){
@@ -29,18 +37,17 @@
     $erreur="Nom d'utilisateur inconnue";
   }
   if (isset($erreur)){
-<<<<<<< HEAD
     //include('../view/vueConnexion.php?numClient='.$numClient);
     include('../view/vueConnexion.php');
   } else {
     $connect=true;
     //include('../view/vueAcceuil.php?numClient='.$thisuser->pseudo);
     include('../view/vueAcceuil.php');
-=======
     include('../view/vueConnexion.php');
   } else {
     $connect=true;
-    include('Acceuil.ctrl.php');
->>>>>>> 0f01da0b352b79730beae9f6470368c8629ae664
-  }
+    include('Acceuil.ctrl.php');*/
+    include('../view/vueConnexion.php');
+
 ?>
+</html>
