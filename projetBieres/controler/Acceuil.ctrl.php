@@ -34,7 +34,7 @@ for ($i=$ind;$i<$ind+5;$i++){
   $lesProduits[$i] = $m;
 }
 
-include('../view/vueAcceuil.php?numClient='.$numClient);
+include('../view/vueAcceuil.php');
 
  ?>
  </html>

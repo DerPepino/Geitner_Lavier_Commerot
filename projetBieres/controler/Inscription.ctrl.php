@@ -9,6 +9,6 @@
     $numClient = -1;
   }
 
-  include('../view/vueInscription.php?numClient='.$numClient);
+  include('../view/vueInscription.php');
 ?>
 </html>

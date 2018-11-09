@@ -60,7 +60,10 @@
           <?php
             echo '<p>'.$m->prix.' € </p>';
           ?>
-          <input type="button" name="ajouterPanier" value="Ajouter au panier" onclick="$rayon->ajouterProduit(2, <?php echo $m->id; ?>)" />
+          <a href="Produit.ctrl.php?id=<?php echo $m->id;?>&numClient=<?php echo $numClient;?>&ajout=1">
+            <input type="submit" name="ajouterPanier" value="Ajouter au panier"/>
+          </a>
+
         </div>
       </div>
     </section>

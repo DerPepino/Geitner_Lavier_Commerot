@@ -25,6 +25,7 @@ class PanierDAO {
     }else {
       $result = $tab->fetchAll();
 
+
       foreach ($result as $i => $elem) {
         $idProduit = $elem['idProduit'];
         $quantite = $elem['quantite'];
@@ -35,6 +36,7 @@ class PanierDAO {
   }
 
   function supprimerProduit(int $idClient, int $idProduit) {
+    echo 'SUPPRESSSIIIOOONNN';
     $sql =  'DELETE FROM panier WHERE idClient='.$idClient.' AND idProduit ='. $idProduit;
     $tab = $this->db->query($sql);
   }

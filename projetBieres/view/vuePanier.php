@@ -35,10 +35,10 @@
   <div id="sidemenu">
     <h4> Catégories </h4>
     <ul>
-      <li><a>Blondes</a></li>
-      <li><a>Brunes</a></li>
-      <li><a>Ambrées</a></li>
-      <li><a>Blanches</a></li>
+      <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Blondes</a></li>
+      <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Brunes</a></li>
+      <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Ambrées</a></li>
+      <li><a  href="Categories.ctrl.php?numClient=<?php echo $numClient; ?>">Blanches</a></li>
     </ul>
   </div>
 
@@ -52,16 +52,16 @@
           echo '<div id="partie_droite"> <div id="details"> <div id="infos">';
           echo '<p> '.$biere->intitule .'</p>';
           echo '<p> '.$biere->description .'</p>';
-          echo '<p> '.$biere->prix .' € </p>';
           echo '</div>';
-          echo '<input type="number" name="quantite" value="1" min="1">';
           echo '<p>' .$biere->prix .' € </p>';
           echo '</div>';
           echo '<div id="boutons">';
-          echo '<a href="Produit.ctrl.php?id='. $biere->id .' numClient='.$numClient.'">
+          echo '<a href="Produit.ctrl.php?id='.$biere->id.'&numClient='.$numClient.'">
             <input type="submit" name="voirProduit" value="Voir le produit">
           </a>';
-          echo '<input type="submit" name="supprimer" value="Supprimer" onclick=supprimerProduit(2,'.$biere->id.')>';
+          echo '<a href="Panier.ctrl.php?ajout='.$biere->id.'&numClient='.$numClient.'">
+            <input type="submit" name="supprimer" value="Supprimer">
+          </a>';
           echo '</div>';
           echo '</div>';
           echo '</section>';
@@ -70,7 +70,7 @@
     </div>
 
     <div id="paiement">
-      <p> Prix Total : 9999€ </p>
+      <p> Prix Total : <?php echo $prixTotal; ?> € </p>
       <a href="Acceuil.ctrl.php?numClient=<?php echo $numClient; ?>">
         <input type="submit" name="commander" value="Passer ma commande">
       </a>
